@@ -3,7 +3,7 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
     <div class="app-drawer">
         <button onclick="openAppDrawer()" class="app-drawer-button"></button>
         <a href="https://nether.click">
-        <img src=https://nether.click/favicon.svg">
+        <img src="https://nether.click/favicon.svg">
             Nether
         </a>
         <a href="https://modern-web.nether.click">
