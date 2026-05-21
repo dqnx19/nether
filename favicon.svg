@@ -1,0 +1,59 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#2a0000"/>
+      <stop offset="100%" stop-color="#050000"/>
+    </radialGradient>
+
+    <linearGradient id="fire" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff7a00"/>
+      <stop offset="50%" stop-color="#ff2a00"/>
+      <stop offset="100%" stop-color="#6a0000"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <circle cx="256" cy="256" r="250" fill="url(#bg)"/>
+
+  <!-- outer ring -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="url(#fire)" stroke-width="10" opacity="0.8"/>
+
+  <!-- central symbol: Nether portal rune (geometric) -->
+  <g filter="url(#glow)" fill="url(#fire)">
+
+    <!-- vertical core -->
+    <rect x="236" y="120" width="40" height="280" rx="10"/>
+
+    <!-- top spike -->
+    <path d="M256 80 L290 140 L222 140 Z"/>
+
+    <!-- bottom spike -->
+    <path d="M256 432 L290 372 L222 372 Z"/>
+
+    <!-- side shards -->
+    <path d="M120 256 L200 220 L200 292 Z"/>
+    <path d="M392 256 L312 220 L312 292 Z"/>
+
+  </g>
+
+  <!-- inner dark cut for depth -->
+  <rect x="248" y="140" width="16" height="232" fill="#0a0000" opacity="0.9"/>
+
+  <!-- sparks -->
+  <g fill="#ff4a00" opacity="0.8">
+    <circle cx="150" cy="180" r="2.5"/>
+    <circle cx="360" cy="170" r="2"/>
+    <circle cx="340" cy="340" r="3"/>
+    <circle cx="170" cy="360" r="2"/>
+  </g>
+
+</svg>
