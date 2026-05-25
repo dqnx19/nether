@@ -1,7 +1,13 @@
 document.querySelector(".app-drawer-wrapper").innerHTML = `
-    <button onclick="openAppDrawer()" class="app-drawer-button"></button>
+    <button onclick="open_app_drawer()" class="app-drawer-button">
+    <div class="dots">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+    </button>
     <div class="app-drawer">
-        <button onclick="openAppDrawer()" class="app-drawer-button"></button>
+        <button onclick="open_app_drawer()" class="app-drawer-button"></button>
         <a href="https://nether.click">
         <img src="https://nether.click/favicon.svg">
             Nether
