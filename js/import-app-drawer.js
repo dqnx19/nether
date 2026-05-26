@@ -12,6 +12,10 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
         <img src="https://nether.click/favicon.svg">
             Nether
         </a>
+        <a href="https://unified-platform.nether.click">
+            <img src="https://unified-platform.nether.click/favicon.svg" alt="">
+            Unified Platform
+        </a>
         <a href="https://modern-web.nether.click">
             <img src="https://modern-web.nether.click/img/favicon.svg" alt="">
             Nether Modern Web
