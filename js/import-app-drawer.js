@@ -9,19 +9,15 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
     <div class="app-drawer">
         <button onclick="open_app_drawer()" class="app-drawer-button"></button>
         <a href="https://nether.click">
-        <img src="https://nether.click/favicon.svg">
+        <img src="https://nether.click/img/icons/favicon.svg">
             Nether
-        </a>
-        <a href="https://unified-platform.nether.click">
-            <img src="https://unified-platform.nether.click/favicon.svg" alt="">
-            Unified Platform
         </a>
         <a href="https://modern-web.nether.click">
             <img src="https://modern-web.nether.click/img/favicon.svg" alt="">
             Nether Modern Web
         </a>
         <a href="https://learn-html.nether.click">
-            <img src="https://learn-html.nether.click/favicon.png" alt="">
+            <img src="https://learn-html.nether.click/img/icons/favicon.png" alt="">
             Nether Learn HTML
         </a>
         <a href="https://learn-css.nether.click">
