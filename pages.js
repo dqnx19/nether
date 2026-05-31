@@ -50,6 +50,8 @@ function showProducts() {
                 <button class="item" onclick="redirect('')">Nether</button>
                 <button class="item" onclick="redirect('modern-web.')">Nether Modern Web</button>
                 <button class="item" onclick="redirect('os.')">NetherOS</button>
+                <button class="item" onclick="redirect('software-modules.')">Nether Software Modules</button>
+                <button class="item" onclick="redirect('online-computer.')">Nether Online Computer</button>
             </div>
         </section>
         <section>
