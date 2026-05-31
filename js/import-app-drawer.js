@@ -20,7 +20,7 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
             <img src="https://os.nether.click/img/logo-small.svg" alt="">
             NetherOS
         </a>
-        <a href="https://software/modules.nether.click">
+        <a href="https://software-modules.nether.click">
             <img src="https://software-modules.nether.click/img/icons/favicon.svg" alt="">
             Nether Software Modules
         </a>
