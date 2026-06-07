@@ -1,23 +1,2 @@
 /js/import-app-drawer.js
-  Access-Control-Allow-Origin: https://nether.click
-
-/js/import-app-drawer.js
-  Access-Control-Allow-Origin: https://modern-web.nether.click
-
-/js/import-app-drawer.js
-  Access-Control-Allow-Origin: https://os.nether.click
-
-/js/import-app-drawer.js
-  Access-Control-Allow-Origin: https://software-modules.nether.click
-
-/js/import-app-drawer.js
-  Access-Control-Allow-Origin: https://learn-html.nether.click
-
-/js/import-app-drawer.js
-  Access-Control-Allow-Origin: https://learn-css.nether.click
-
-/js/import-app-drawer.js
-  Access-Control-Allow-Origin: https://srt.nether.click
-
-/js/import-app-drawer.js
-  Access-Control-Allow-Origin: https://srt.nether.click
+  Access-Control-Allow-Origin: *
