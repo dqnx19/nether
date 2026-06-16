@@ -1,19 +1,32 @@
-const header = document.createElement("header");
-const main = document.createElement("main");
-const footer = document.createElement("footer");
+import { setFavicon, setContentOfHeader, setContentOfMain, setContentOfFooter, scrollUp, setTitle, importCSSFromList } from "https://js.nether.click/nether.js"
 
-document.body.appendChild(header)
-document.body.appendChild(main)
-document.body.appendChild(footer)
+importCSSFromList([
+    "https://modern-web.nether.click/components/css/all.css",
+    "https://modern-web.nether.click/components/css/body.css",
+    "https://modern-web.nether.click/components/css/header.css",
+    "https://modern-web.nether.click/components/css/main.css",
+    "https://modern-web.nether.click/components/css/footer.css",
+    "https://modern-web.nether.click/components/css/h1.css",
+    "https://modern-web.nether.click/components/css/p.css",
+    "https://modern-web.nether.click/components/css/section.css",
+    "https://modern-web.nether.click/components/css/table.css",
+    "https://modern-web.nether.click/components/css/th.css",
+    "https://modern-web.nether.click/components/css/td.css",
+    "https://modern-web.nether.click/css/fonts.css",
+    "https://modern-web.nether.click/components/css/li.css",
+    "https://modern-web.nether.click/components/css/app-drawer.css",
+    "https://modern-web.nether.click/components/css/logo.css",
+    "https://modern-web.nether.click/components/css/grouped-list.css"
+])
 
-header.innerHTML = `
+setContentOfHeader(`
     <div class="app-drawer-wrapper"></div>
     <button class="logo" onclick="showHome()">
         <img src="img/icons/favicon.svg">
     </button>
-`;
+`)
 
-footer.innerHTML = `
+setContentOfFooter(`
     <button onclick="showHome()">
         <img src="img/icons/favicon.svg">
     </button>
@@ -23,12 +36,12 @@ footer.innerHTML = `
     <button onclick="showNews()">
         <img src="img/links-icons/news.svg">
     </button>
-`;
+`)
 
 function showHome() {
     scrollUp();
-    document.title = "Home Page - Nether";
-    main.innerHTML = `
+    setTitle("Nether (nether.click)")
+    setContentOfMain(`
         <h1>Home Page</h1>
         <section>
             <div class="grouped-list">
@@ -36,13 +49,13 @@ function showHome() {
                 <button class="item" onclick="showNews()">News</button>
             </div>
         </section>
-    `;
+    `)
 }
 
 function showProducts() {
     scrollUp();
-    document.title = "Products - Nether";
-    main.innerHTML = `
+    setTitle("Nether Products")
+    setContentOfMain(`
         <h1>Products</h1>
         <section>
             <h2>Nether</h2>
@@ -69,13 +82,13 @@ function showProducts() {
                 <button class="item" onclick="redirect('srb.')">Sigma Republic Bank</button>
             </div>
         </section>
-    `;
+    `)
 }
 
 function showNews() {
     scrollUp();
-    document.title = "News - Nether";
-    main.innerHTML = `
+    setTitle("Nether News")
+    setContentOfMain(`
         <h1>News</h1>
         <section>
             <div class="grouped-list">
@@ -83,7 +96,7 @@ function showNews() {
                     Sigma Republic will change to Nether Republic
                 </button>
         </section>
-    `;
+    `)
 }
 
 function redirect(url) {
@@ -92,8 +105,8 @@ function redirect(url) {
 
 function showNews_sigma_republic_will_change_to_nether_republic() {
     scrollUp();
-    document.title = "Sigma Republic will change to Nether Republic - Nether News";
-    main.innerHTML = `
+    setTitle("Sigma Republic will change to Nether Republic - Nether News")
+    setContentOfMain(`
         <h1>Sigma Republic will change to Nether Republic</h1>
         <section>
             <p>Created: 31 May 2026</p>
@@ -156,14 +169,7 @@ function showNews_sigma_republic_will_change_to_nether_republic() {
                 </tr>
             </table>
         </section>
-    `;
-}
-
-function scrollUp() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+    `)
 }
 
 showHome();
