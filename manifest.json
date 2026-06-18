@@ -1,21 +1,21 @@
 {
-    "name": "Nether",
-    "short_name": "Nether",
+    "name": "Nether (nether.click)",
+    "short_name": "Nether (nether.click)",
     "description": "Homepage for Nether ecosystem",
     "start_url": "/",
     "scope": "/",
     "display": "standalone",
-    "background_color": "#6a0000",
+    "background_color": "#0d0d0f",
     "theme_color": "#1a1a1a",
     "orientation": "portrait",
     "icons": [
         {
-            "src": "favicon.svg",
+            "src": "img/icons/favicon.svg",
             "sizes": "192x192",
             "type": "image/svg+xml"
         },
         {
-            "src": "favicon.svg",
+            "src": "img/icons/favicon.svg",
             "sizes": "512x512",
             "type": "image/svg+xml"
         }

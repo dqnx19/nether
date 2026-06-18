@@ -1,41 +1,57 @@
-import { setFavicon, setContentOfHeader, setContentOfMain, setContentOfFooter, scrollUp, setTitle, importCSSFromList } from "https://js.nether.click/nether.js"
+import { setFavicon, setContentOfHeader, setContentOfMain, setContentOfFooter, scrollUp, setTitle, importCSSFromList, importJSFromList, setAttribute } from "https://js.nether.click/nether.js"
 
-importCSSFromList([
+window.showHome = showHome
+window.showProducts = showProducts
+window.showNews = showNews
+window.showNews_sigma_republic_will_change_to_nether_republic = showNews_sigma_republic_will_change_to_nether_republic
+
+await importCSSFromList([
     "https://modern-web.nether.click/components/css/all.css",
     "https://modern-web.nether.click/components/css/body.css",
     "https://modern-web.nether.click/components/css/header.css",
     "https://modern-web.nether.click/components/css/main.css",
     "https://modern-web.nether.click/components/css/footer.css",
-    "https://modern-web.nether.click/components/css/h1.css",
+    "https://modern-web.nether.click/components/css/headings.css",
     "https://modern-web.nether.click/components/css/p.css",
     "https://modern-web.nether.click/components/css/section.css",
     "https://modern-web.nether.click/components/css/table.css",
-    "https://modern-web.nether.click/components/css/th.css",
-    "https://modern-web.nether.click/components/css/td.css",
-    "https://modern-web.nether.click/css/fonts.css",
+    "https://modern-web.nether.click/fonts/lexend/lexend.css",
     "https://modern-web.nether.click/components/css/li.css",
     "https://modern-web.nether.click/components/css/app-drawer.css",
     "https://modern-web.nether.click/components/css/logo.css",
     "https://modern-web.nether.click/components/css/grouped-list.css"
 ])
 
-setContentOfHeader(`
+await importJSFromList([
+    "js/import-app-drawer.js",
+    "https://modern-web.nether.click/components/js/app-drawer.js",
+    "https://modern-web.nether.click/components/js/footer.js"
+])
+
+await setAttribute("html", "lang", "en")
+
+await setFavicon("img/icons/favicon.svg")
+
+await setContentOfHeader(`
     <div class="app-drawer-wrapper"></div>
     <button class="logo" onclick="showHome()">
         <img src="img/icons/favicon.svg">
     </button>
 `)
 
-setContentOfFooter(`
-    <button onclick="showHome()">
-        <img src="img/icons/favicon.svg">
-    </button>
-    <button onclick="showProducts()">
-        <img src="img/links-icons/products.svg">
-    </button>
-    <button onclick="showNews()">
-        <img src="img/links-icons/news.svg">
-    </button>
+await setContentOfFooter(`
+    <span class="expand-bar"></span>
+    <div class="buttons">
+        <button onclick="showHome()">
+            <img src="img/icons/favicon.svg">
+        </button>
+        <button onclick="showProducts()">
+            <img src="img/links-icons/products.svg">
+        </button>
+        <button onclick="showNews()">
+            <img src="img/links-icons/news.svg">
+        </button>
+    </div>
 `)
 
 function showHome() {

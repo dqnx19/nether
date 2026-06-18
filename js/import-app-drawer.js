@@ -31,14 +31,10 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
         <a href="https://js.nether.click">
             <img src="https://js.nether.click/favicon.png">
             Nether.js
-        </a> 
-        <a href="https://learn-html.nether.click">
-            <img src="https://learn-html.nether.click/img/icons/favicon.png" alt="">
-            Nether Learn HTML
         </a>
-        <a href="https://learn-css.nether.click">
-            <img src="https://learn-css.nether.click/favicon.png" alt="">
-            Nether Learn CSS
+        <a href="https://sr.nether.click">
+            <img src="https://sr.nether.click/img/icons/favicon.svg">
+            Sigma Republic
         </a>
         <a href="https://srt.nether.click">
             <img src="https://srt.nether.click/img/icons/logo.svg" alt="">
