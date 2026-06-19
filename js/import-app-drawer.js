@@ -32,17 +32,17 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
             <img src="https://js.nether.click/favicon.png">
             Nether.js
         </a>
-        <a href="https://sr.nether.click">
-            <img src="https://sr.nether.click/img/icons/favicon.svg">
-            Sigma Republic
+        <a href="https://nr.nether.click">
+            <img src="https://nr.nether.click/img/icons/favicon.svg">
+            Nether Republic
         </a>
         <a href="https://srt.nether.click">
-            <img src="https://srt.nether.click/img/icons/logo.svg" alt="">
-            Sigma Republic Transport
+            <img src="https://nrt.nether.click/img/icons/logo.svg" alt="">
+            Nether Republic Transport
         </a>
-        <a href="https://srb.nether.click">
-            <img src="https://srb.nether.click/img/icons/logo.svg" alt="">
-            Sigma Republic Bank
+        <a href="https://nrb.nether.click">
+            <img src="https://nrb.nether.click/img/icons/logo.svg" alt="">
+            Nether Republic Bank
         </a>
     </div>
 `;
