@@ -1,8 +1,12 @@
-import { setFavicon, setContentOfHeader, setContentOfMain, setContentOfFooter, scrollUp, setTitle, importCSSFromList, importJSFromList, setAttribute } from "https://js.nether.click/nether.js"
+import { setFavicon, setContentOfHeader, setContentOfMain, setContentOfFooter, scrollUp, setTitle, getURLParam, importCSSFromList, importJSFromList, setAttribute } from "https://js.nether.click/nether.js"
 
-window.showHome = showHome
-window.showProducts = showProducts
-window.redirect = redirect
+await setAttribute("html", "lang", "en")
+
+await setFavicon("img/icons/favicon.svg")
+
+if (getURLParam("showas") === "app") {
+    document.querySelector("header").style.display = "none"
+}
 
 await importCSSFromList([
     "https://modern-web.nether.click/components/css/all.css",
@@ -27,10 +31,6 @@ await importJSFromList([
     "https://modern-web.nether.click/components/js/footer.js"
 ])
 
-await setAttribute("html", "lang", "en")
-
-await setFavicon("img/icons/favicon.svg")
-
 await setContentOfHeader(`
     <div class="app-drawer-wrapper"></div>
     <button class="logo" onclick="showHome()">
@@ -39,16 +39,17 @@ await setContentOfHeader(`
 `)
 
 await setContentOfFooter(`
-    <span class="expand-bar"></span>
-    <div class="buttons">
-        <button onclick="showHome()">
-            <img src="img/icons/favicon.svg">
-        </button>
-        <button onclick="showProducts()">
-            <img src="img/links-icons/products.svg">
-        </button>
-    </div>
+    <button onclick="showHome()">
+        <img src="img/icons/favicon.svg">
+    </button>
+    <button onclick="showProducts()">
+        <img src="img/links-icons/products.svg">
+    </button>
 `)
+
+window.showHome = showHome
+window.showProducts = showProducts
+window.redirect = redirect
 
 function showHome() {
     scrollUp();
@@ -74,17 +75,16 @@ function showProducts() {
             <div class="grouped-list">
                 <button class="item" onclick="redirect('')">Nether</button>
                 <button class="item" onclick="redirect('modern-web.')">Nether Modern Web</button>
-                <button class="item" onclick="redirect('os.')">NetherOS</button>
-                <button class="item" onclick="redirect('software-modules.')">Nether Software Modules</button>
-                <button class="item" onclick="redirect('online-computer.')">Nether Online Computer</button>
                 <button class="item" onclick="redirect('js.')">Nether.js</button>
+                <button class="item" onclick="redirect('os.')">NetherOS</button>
+                <button class="item" onclick="redirect('online-computer.')">Nether Online Computer</button>
             </div>
         </section>
         <section>
-            <h2>Sigma Republic</h2>
+            <h2>Nether Republic</h2>
             <div class="grouped-list">
-                <button class="item" onclick="redirect('srt.')">Sigma Republic Transport</button>
-                <button class="item" onclick="redirect('srb.')">Sigma Republic Bank</button>
+                <button class="item" onclick="redirect('nrt.')">Nether Republic Transport</button>
+                <button class="item" onclick="redirect('nrb.')">Nether Republic Bank</button>
             </div>
         </section>
     `)

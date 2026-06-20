@@ -16,27 +16,24 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
             <img src="https://modern-web.nether.click/img/icons/favicon.svg" alt="">
             Nether Modern Web
         </a>
+        <a href="https://js.nether.click">
+            <img src="https://js.nether.click/favicon.png">
+            Nether.js
+        </a>
         <a href="https://os.nether.click">
             <img src="https://os.nether.click/img/logo-small.svg" alt="">
             NetherOS
-        </a>
-        <a href="https://software-modules.nether.click">
-            <img src="https://software-modules.nether.click/img/icons/favicon.svg" alt="">
-            Nether Software Modules
         </a>
         <a href="https://online-computer.nether.click">
             <img src="https://online-computer.nether.click/img/icons/favicon.svg" alt="">
             Nether Online Computer
         </a>
-        <a href="https://js.nether.click">
-            <img src="https://js.nether.click/favicon.png">
-            Nether.js
-        </a>
+        
         <a href="https://nr.nether.click">
             <img src="https://nr.nether.click/img/icons/favicon.svg">
             Nether Republic
         </a>
-        <a href="https://srt.nether.click">
+        <a href="https://nrt.nether.click">
             <img src="https://nrt.nether.click/img/icons/logo.svg" alt="">
             Nether Republic Transport
         </a>
