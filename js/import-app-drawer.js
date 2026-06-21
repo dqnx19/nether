@@ -24,11 +24,6 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
             <img src="https://os.nether.click/img/logo-small.svg" alt="">
             NetherOS
         </a>
-        <a href="https://online-computer.nether.click">
-            <img src="https://online-computer.nether.click/img/icons/favicon.svg" alt="">
-            Nether Online Computer
-        </a>
-        
         <a href="https://nr.nether.click">
             <img src="https://nr.nether.click/img/icons/favicon.svg">
             Nether Republic

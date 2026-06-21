@@ -88,10 +88,6 @@ function showProducts() {
                     <img src="https://os.nether.click/img/logo-small.svg" alt="NetherOS Logo">
                     NetherOS
                 </button>
-                <button class="item" onclick="redirect('https://online-computer.nether.click')">
-                    <img src="https://online-computer.nether.click/img/icons/favicon.svg" alt="Nether Online Computer Logo">
-                    Nether Online Computer
-                </button>
             </div>
         </section>
         <section>
