@@ -17,7 +17,7 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
             Nether Modern Web
         </a>
         <a href="https://js.nether.click">
-            <img src="https://js.nether.click/favicon.png">
+            <img src="https://js.nether.click/img/icons/favicon.png">
             Nether.js
         </a>
         <a href="https://os.nether.click">

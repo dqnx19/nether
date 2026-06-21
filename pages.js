@@ -1,4 +1,4 @@
-import { setFavicon, setContentOfHeader, setContentOfMain, setContentOfFooter, scrollUp, setTitle, getURLParam, importCSSFromList, importJSFromList, setAttribute } from "https://js.nether.click/nether.js"
+import { setFavicon, setContentOfHeader, setContentOfMain, setContentOfFooter, scrollUp, setTitle, getURLParam, importCSSFromList, importJSFromList, setAttribute, redirect } from "https://js.nether.click/nether.js"
 
 await setAttribute("html", "lang", "en")
 
@@ -59,7 +59,6 @@ function showHome() {
         <section>
             <div class="grouped-list">
                 <button class="item" onclick="showProducts()">Products</button>
-                <button class="item" onclick="showNews()">News</button>
             </div>
         </section>
     `)
@@ -73,25 +72,42 @@ function showProducts() {
         <section>
             <h2>Nether</h2>
             <div class="grouped-list">
-                <button class="item" onclick="redirect('')">Nether</button>
-                <button class="item" onclick="redirect('modern-web.')">Nether Modern Web</button>
-                <button class="item" onclick="redirect('js.')">Nether.js</button>
-                <button class="item" onclick="redirect('os.')">NetherOS</button>
-                <button class="item" onclick="redirect('online-computer.')">Nether Online Computer</button>
+                <button class="item" onclick="redirect('https://nether.click')">
+                    <img src="https://nether.click/img/icons/favicon.svg" alt="Nether Logo">
+                    Nether
+                </button>
+                <button class="item" onclick="redirect('https://modern-web.nether.click')">
+                    <img src="https://modern-web.nether.click/img/icons/favicon.svg" alt="Nether Modern Web Logo">
+                    Nether Modern Web
+                </button>
+                <button class="item" onclick="redirect('https://js.nether.click')">
+                    <img src="https://js.nether.click/img/icons/favicon.png" alt="Nether.js Logo">
+                    Nether.js
+                </button>
+                <button class="item" onclick="redirect('https://os.nether.click')">
+                    <img src="https://os.nether.click/img/logo-small.svg" alt="NetherOS Logo">
+                    NetherOS
+                </button>
+                <button class="item" onclick="redirect('https://online-computer.nether.click')">
+                    <img src="https://online-computer.nether.click/img/icons/favicon.svg" alt="Nether Online Computer Logo">
+                    Nether Online Computer
+                </button>
             </div>
         </section>
         <section>
             <h2>Nether Republic</h2>
             <div class="grouped-list">
-                <button class="item" onclick="redirect('nrt.')">Nether Republic Transport</button>
-                <button class="item" onclick="redirect('nrb.')">Nether Republic Bank</button>
+                <button class="item" onclick="redirect('https://nrt.nether.click')">
+                    <img src="https://nrt.nether.click/img/icons/logo.svg" alt="Nether Republic Transport Logo">
+                    Nether Republic Transport
+                </button>
+                <button class="item" onclick="redirect('https://nrb.nether.click')">
+                    <img src="https://nrb.nether.click/img/icons/logo.svg" alt="Nether Republic Bank Logo">
+                    Nether Republic Bank
+                </button>
             </div>
         </section>
     `)
-}
-
-function redirect(url) {
-    window.location.href = `https://${url}nether.click`;
 }
 
 showHome();
