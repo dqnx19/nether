@@ -1,12 +1,8 @@
-import { setFavicon, setContentOfHeader, setContentOfMain, setContentOfFooter, scrollUp, setTitle, getURLParam, importCSSFromList, importJSFromList, setAttribute, redirect } from "https://js.nether.click/nether.js"
+import { setFavicon, setContentOfHeader, setContentOfMain, setContentOfFooter, scrollUp, setTitle, getURLParam, importCSSFromList, importJSFromList, setAttribute, redirect } from "https://frameworks.nether.click/nether.js"
 
 await setAttribute("html", "lang", "en")
 
 await setFavicon("img/icons/favicon.svg")
-
-if (getURLParam("showas") === "app") {
-    document.querySelector("header").style.display = "none"
-}
 
 await importCSSFromList([
     "https://modern-web.nether.click/components/css/all.css",
@@ -21,14 +17,16 @@ await importCSSFromList([
     "https://modern-web.nether.click/fonts/lexend/lexend.css",
     "https://modern-web.nether.click/components/css/li.css",
     "https://modern-web.nether.click/components/css/app-drawer.css",
-    "https://modern-web.nether.click/components/css/logo.css",
-    "https://modern-web.nether.click/components/css/grouped-list.css"
+    "https://modern-web.nether.click/components/css/grouped-list.css",
+    "https://modern-web.nether.click/components/css/tabs-switching.css"
 ])
 
 await importJSFromList([
     "js/import-app-drawer.js",
+    "js/import-app-check.js",
     "https://modern-web.nether.click/components/js/app-drawer.js",
-    "https://modern-web.nether.click/components/js/footer.js"
+    "https://modern-web.nether.click/components/js/footer.js",
+    "https://modern-web.nether.click/components/js/tabs-switching.js"
 ])
 
 await setContentOfHeader(`
@@ -70,37 +68,50 @@ function showProducts() {
     setContentOfMain(`
         <h1>Products</h1>
         <section>
-            <h2>Nether</h2>
-            <div class="grouped-list">
-                <button class="item" onclick="redirect('https://nether.click')">
-                    <img src="https://nether.click/img/icons/favicon.svg" alt="Nether Logo">
-                    Nether
-                </button>
-                <button class="item" onclick="redirect('https://modern-web.nether.click')">
-                    <img src="https://modern-web.nether.click/img/icons/favicon.svg" alt="Nether Modern Web Logo">
-                    Nether Modern Web
-                </button>
-                <button class="item" onclick="redirect('https://js.nether.click')">
-                    <img src="https://js.nether.click/img/icons/favicon.png" alt="Nether.js Logo">
-                    Nether.js
-                </button>
-                <button class="item" onclick="redirect('https://os.nether.click')">
-                    <img src="https://os.nether.click/img/logo-small.svg" alt="NetherOS Logo">
-                    NetherOS
-                </button>
-            </div>
-        </section>
-        <section>
-            <h2>Nether Republic</h2>
-            <div class="grouped-list">
-                <button class="item" onclick="redirect('https://nrt.nether.click')">
-                    <img src="https://nrt.nether.click/img/icons/logo.svg" alt="Nether Republic Transport Logo">
-                    Nether Republic Transport
-                </button>
-                <button class="item" onclick="redirect('https://nrb.nether.click')">
-                    <img src="https://nrb.nether.click/img/icons/logo.svg" alt="Nether Republic Bank Logo">
-                    Nether Republic Bank
-                </button>
+            <div class="tabs-switching">
+                <div class="tabs">
+                    <button class="tab active" onclick="showTab('nether', this)">Nether</button>
+                    <button class="tab" onclick="showTab('nether-republic', this)">Nether Republic</button>
+                </div>
+                <div class="tab-content active" id="nether">
+                    <h2>Nether</h2>
+                    <div class="grouped-list">
+                        <button class="item" onclick="redirect('https://nether.click')">
+                            <img src="https://nether.click/img/icons/favicon.svg" alt="Nether Logo">
+                            Nether
+                        </button>
+                        <button class="item" onclick="redirect('https://modern-web.nether.click')">
+                            <img src="https://modern-web.nether.click/img/icons/favicon.svg"
+                                alt="Nether Modern Web Logo">
+                            Nether Modern Web
+                        </button>
+                        <button class="item" onclick="redirect('https://frameworks.nether.click')">
+                            <img src="https://frameworks.nether.click/img/icons/favicon.png" alt="Nether.js Logo">
+                            Nether Frameworks
+                        </button>
+                        <button class="item" onclick="redirect('https://os.nether.click')">
+                            <img src="https://os.nether.click/img/logo-small.svg" alt="NetherOS Logo">
+                            NetherOS
+                        </button>
+                    </div>
+                </div>
+                <div class="tab-content" id="nether-republic">
+                    <h2>Nether Republic</h2>
+                    <div class="grouped-list">
+                        <button class="item" onclick="redirect('https://nr.nether.click')">
+                            <img src="https://nr.nether.click/img/icons/favicon.svg" alt="Nether Logo">
+                            Nether Republic
+                        </button>
+                        <button class="item" onclick="redirect('https://nrt.nether.click')">
+                            <img src="https://nrt.nether.click/img/icons/logo.svg" alt="Nether Republic Transport Logo">
+                            Nether Republic Transport
+                        </button>
+                        <button class="item" onclick="redirect('https://nrb.nether.click')">
+                            <img src="https://nrb.nether.click/img/icons/logo.svg" alt="Nether Republic Bank Logo">
+                            Nether Republic Bank
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
     `)
