@@ -1,4 +1,4 @@
-import { setFavicon, setContentOfHeader, setContentOfMain, setContentOfFooter, scrollUp, setTitle, getURLParam, importCSSFromList, importJSFromList, setAttribute, redirect } from "https://frameworks.nether.click/nether.js"
+import { setFavicon, setContentOfHeader, setContentOfMain, setContentOfFooter, scrollUp, setTitle, getURLParam, importCSSFromList, importJSFromList, setAttribute, redirect } from "https://js.nether.click/nether.js"
 
 await setAttribute("html", "lang", "en")
 
@@ -85,9 +85,13 @@ function showProducts() {
                                 alt="Nether Modern Web Logo">
                             Nether Modern Web
                         </button>
-                        <button class="item" onclick="redirect('https://frameworks.nether.click')">
-                            <img src="https://frameworks.nether.click/img/icons/favicon.png" alt="Nether.js Logo">
-                            Nether Frameworks
+                        <button class="item" onclick="redirect('https://js.nether.click')">
+                            <img src="https://js.nether.click/img/icons/favicon.png" alt="Nether.js Logo">
+                            Nether.js
+                        </button>
+                        <button class="item" onclick="redirect('https://fonts.nether.click')">
+                            <img src="https://fonts.nether.click/img/icons/favicon.svg" alt="Nether.js Logo">
+                            Nether Fonts
                         </button>
                         <button class="item" onclick="redirect('https://os.nether.click')">
                             <img src="https://os.nether.click/img/logo-small.svg" alt="NetherOS Logo">
