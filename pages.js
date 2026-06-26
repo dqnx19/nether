@@ -1,4 +1,4 @@
-import { setFavicon, setContentOfHeader, setContentOfMain, setContentOfFooter, scrollUp, setTitle, getURLParam, importCSSFromList, importJSFromList, setAttribute, redirect } from "https://js.nether.click/nether.js"
+import { setFavicon, setContentOfHeader, setContentOfMain, setContentOfFooter, scrollUp, setTitle, importCSSFromList, importJSFromList, setAttribute, redirect } from "https://js.nether.click/nether.js"
 
 await setAttribute("html", "lang", "en")
 
@@ -32,31 +32,33 @@ await importJSFromList([
 await setContentOfHeader(`
     <div class="app-drawer-wrapper"></div>
     <button class="logo" onclick="showHome()">
-        <img src="img/icons/favicon.svg">
+        <img src="img/icons/favicon.svg" alt="Nether (nether.click) logo">
     </button>
 `)
 
 await setContentOfFooter(`
     <button onclick="showHome()">
-        <img src="img/icons/favicon.svg">
+        <img src="img/icons/favicon.svg" alt="Nether (nether.click) Logo">
     </button>
     <button onclick="showProducts()">
-        <img src="img/links-icons/products.svg">
+        <img src="img/links-icons/products.svg" alt="Products page link icon">
     </button>
 `)
 
 window.showHome = showHome
 window.showProducts = showProducts
-window.redirect = redirect
 
 function showHome() {
     scrollUp();
     setTitle("Nether (nether.click)")
     setContentOfMain(`
-        <h1>Home Page</h1>
+        <h1>Nether</h1>
         <section>
             <div class="grouped-list">
-                <button class="item" onclick="showProducts()">Products</button>
+                <button class="item" onclick="showProducts()">
+                    <img src="img/links-icons/products.svg" alt="">
+                    Products
+                </button>
             </div>
         </section>
     `)
@@ -64,14 +66,14 @@ function showHome() {
 
 function showProducts() {
     scrollUp();
-    setTitle("Nether Products")
+    setTitle("Products - Nether (nether.click)")
     setContentOfMain(`
         <h1>Products</h1>
         <section>
             <div class="tabs-switching">
                 <div class="tabs">
-                    <button class="tab active" onclick="showTab('nether', this)">Nether</button>
-                    <button class="tab" onclick="showTab('nether-republic', this)">Nether Republic</button>
+                    <button class="tab active" onclick="showTab('nether',)" data-tab="nether">Nether</button>
+                    <button class="tab" onclick="showTab('nether-republic')" data-tab="nether-republic">Nether Republic</button>
                 </div>
                 <div class="tab-content active" id="nether">
                     <h2>Nether</h2>
