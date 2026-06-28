@@ -54,6 +54,7 @@ function showHome() {
     setContentOfMain(`
         <h1>Nether</h1>
         <section>
+            <h2>Links</h2>
             <div class="grouped-list">
                 <button class="item" onclick="showProducts()">
                     <img src="img/links-icons/products.svg" alt="">
@@ -95,9 +96,9 @@ function showProducts() {
                             <img src="https://fonts.nether.click/img/icons/favicon.svg" alt="Nether.js Logo">
                             Nether Fonts
                         </button>
-                        <button class="item" onclick="redirect('https://os.nether.click')">
-                            <img src="https://os.nether.click/img/logo-small.svg" alt="NetherOS Logo">
-                            NetherOS
+                        <button class="item" onclick="redirect('https://terminal.nether.click')">
+                            <img src="https://terminal.nether.click/source-code/img/logo.svg" alt="">
+                            Nether Terminal
                         </button>
                     </div>
                 </div>

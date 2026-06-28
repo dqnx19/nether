@@ -24,9 +24,9 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
             <img src="https://fonts.nether.click/img/icons/favicon.svg">
             Nether Fonts
         </a>
-        <a href="https://os.nether.click">
-            <img src="https://os.nether.click/img/logo-small.svg" alt="">
-            NetherOS
+        <a href="https://terminal.nether.click">
+            <img src="https://terminal.nether.click/source-code/img/logo.svg" alt="">
+            Nether Terminal
         </a>
         <a href="https://nr.nether.click">
             <img src="https://nr.nether.click/img/icons/favicon.svg">
