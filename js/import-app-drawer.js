@@ -20,6 +20,10 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
             <img src="https://js.nether.click/img/icons/favicon.png">
             Nether.js
         </a>
+        <a href="https://ps.nether.click">
+            <img src="https://ps.nether.click/img/icons/favicon.png">
+            Nether.ps
+        </a>
         <a href="https://fonts.nether.click">
             <img src="https://fonts.nether.click/img/icons/favicon.svg">
             Nether Fonts

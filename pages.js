@@ -92,6 +92,10 @@ function showProducts() {
                             <img src="https://js.nether.click/img/icons/favicon.png" alt="Nether.js Logo">
                             Nether.js
                         </button>
+                        <button class="item" onclick="redirect('https://ps.nether.click')">
+                            <img src="https://ps.nether.click/img/icons/favicon.png" alt="Nether.ps Logo">
+                            Nether.ps
+                        </button>
                         <button class="item" onclick="redirect('https://fonts.nether.click')">
                             <img src="https://fonts.nether.click/img/icons/favicon.svg" alt="Nether.js Logo">
                             Nether Fonts
