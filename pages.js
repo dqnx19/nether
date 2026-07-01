@@ -48,6 +48,8 @@ await setContentOfFooter(`
 window.showHome = showHome
 window.showProducts = showProducts
 
+window.redirect = redirect
+
 function showHome() {
     scrollUp();
     setTitle("Nether (nether.click)")
