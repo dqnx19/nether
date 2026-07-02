@@ -12,9 +12,9 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
         <img src="https://nether.click/img/icons/favicon.svg">
             Nether
         </a>
-        <a href="https://modern-web.nether.click">
-            <img src="https://modern-web.nether.click/img/icons/favicon.svg" alt="">
-            Nether Modern Web
+        <a href="https://web-ui.nether.click">
+            <img src="https://web-ui.nether.click/img/icons/favicon.svg" alt="">
+            Nether Web UI
         </a>
         <a href="https://js.nether.click">
             <img src="https://js.nether.click/img/icons/favicon.png">

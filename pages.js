@@ -14,8 +14,8 @@ await importCSSFromList([
     "https://web-ui.nether.click/components/css/p.css",
     "https://web-ui.nether.click/components/css/section.css",
     "https://web-ui.nether.click/components/css/table.css",
-    "https://modern-web.nether.click/fonts/lexend/lexend.css",
-    "https://web-ui.nether.click/components/css/li.css",
+    "https://web-ui.nether.click/fonts/lexend/lexend.css",
+    "https://web-ui.nether.click/components/css/lists.css",
     "https://web-ui.nether.click/components/css/app-drawer.css",
     "https://web-ui.nether.click/components/css/grouped-list.css",
     "https://web-ui.nether.click/components/css/tabs-switching.css"
@@ -85,10 +85,10 @@ function showProducts() {
                             <img src="https://nether.click/img/icons/favicon.svg" alt="Nether Logo">
                             Nether
                         </button>
-                        <button class="item" onclick="redirect('https://modern-web.nether.click')">
-                            <img src="https://modern-web.nether.click/img/icons/favicon.svg"
-                                alt="Nether Modern Web Logo">
-                            Nether Modern Web
+                        <button class="item" onclick="redirect('https://web-ui.nether.click')">
+                            <img src="https://web-ui.nether.click/img/icons/favicon.svg"
+                                alt="Nether Web UI Logo">
+                            Nether Web UI
                         </button>
                         <button class="item" onclick="redirect('https://js.nether.click')">
                             <img src="https://js.nether.click/img/icons/favicon.png" alt="Nether.js Logo">
