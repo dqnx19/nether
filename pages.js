@@ -24,6 +24,7 @@ await importCSSFromList([
 await importJSFromList([
     "js/import-app-drawer.js",
     "js/import-app-check.js",
+
     "https://web-ui.nether.click/components/js/app-drawer.js",
     "https://web-ui.nether.click/components/js/footer.js",
     "https://web-ui.nether.click/components/js/tabs-switching.js"
@@ -119,9 +120,33 @@ function showProducts() {
                             <img src="https://notepad.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
                             Nether Notepad
                         </button>
+                        <button class="item" onclick="redirect('https://photos.nether.click')">
+                            <img src="https://photos.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            Nether Photos
+                        </button>
+                        <button class="item" onclick="redirect('https://server.nether.click')">
+                            <img src="https://server.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            Nether Server
+                        </button>
+                        <button class="item" onclick="redirect('https://system-monitor.nether.click')">
+                            <img src="https://system-monitor.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            Nether System Monitor
+                        </button>
                         <button class="item" onclick="redirect('https://terminal.nether.click')">
                             <img src="https://terminal.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
                             Nether Terminal
+                        </button>
+                        <button class="item" onclick="redirect('https://ui.nether.click')">
+                            <img src="https://ui.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            Nether UI
+                        </button>
+                        <button class="item" onclick="redirect('https://videos.nether.click')">
+                            <img src="https://videos.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            Nether Videos
+                        </button>
+                        <button class="item" onclick="redirect('https://weather.nether.click')">
+                            <img src="https://weather.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            Nether Weather
                         </button>
                     </div>
                 </div>

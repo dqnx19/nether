@@ -7,12 +7,15 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
         </div>
     </button>
     <div class="app-drawer">
-        <button onclick="open_app_drawer()" class="app-drawer-button"></button>
         <a href="https://nether.click">
             <img src="https://nether.click/img/icons/favicon.svg">
             Nether
         </a>
         <div class="group">
+            <a href="https://web.nether.click">
+                <img src="https://web.nether.click/img/icons/favicon.svg" alt="">
+                Nether Web
+            </a>
             <a href="https://web-ui.nether.click">
                 <img src="https://web-ui.nether.click/img/icons/favicon.svg" alt="">
                 Nether Web UI
@@ -43,9 +46,33 @@ document.querySelector(".app-drawer-wrapper").innerHTML = `
                 <img src="https://notepad.nether.click/source-code/img/logo.svg" alt="">
                 Nether Notepad
             </a>
+            <a href="https://photos.nether.click">
+                <img src="https://photos.nether.click/source-code/img/logo.svg" alt="">
+                Nether Photos
+            </a>
+            <a href="https://server.nether.click">
+                <img src="https://server.nether.click/source-code/img/logo.svg" alt="">
+                Nether Server
+            </a>
+            <a href="https://system-monitor.nether.click">
+                <img src="https://system-monitor.nether.click/source-code/img/logo.svg" alt="">
+                Nether System monitor
+            </a>
             <a href="https://terminal.nether.click">
                 <img src="https://terminal.nether.click/source-code/img/logo.svg" alt="">
                 Nether Terminal
+            </a>
+            <a href="https://ui.nether.click">
+                <img src="https://ui.nether.click/source-code/img/logo.svg" alt="">
+                Nether UI
+            </a>
+            <a href="https://videos.nether.click">
+                <img src="https://videos.nether.click/source-code/img/logo.svg" alt="">
+                Nether Videos
+            </a>
+            <a href="https://weather.nether.click">
+                <img src="https://weather.nether.click/source-code/img/logo.svg" alt="">
+                Nether Weather
             </a>
         </div>
         <div class="group">
