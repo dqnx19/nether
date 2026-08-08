@@ -6,19 +6,20 @@ await setFavicon("img/icons/favicon.svg")
 
 await importCSSFromList([
     "https://web-ui.nether.click/components/css/all.css",
+    "https://web-ui.nether.click/components/css/app-drawer.css",
+    "https://web-ui.nether.click/components/css/button.css",
     "https://web-ui.nether.click/components/css/body.css",
-    "https://web-ui.nether.click/components/css/header.css",
-    "https://web-ui.nether.click/components/css/main.css",
     "https://web-ui.nether.click/components/css/footer.css",
+    "https://web-ui.nether.click/components/css/grouped-list.css",
+    "https://web-ui.nether.click/components/css/header.css",
     "https://web-ui.nether.click/components/css/headings.css",
+    "https://web-ui.nether.click/components/css/lists.css",
+    "https://web-ui.nether.click/components/css/main.css",
     "https://web-ui.nether.click/components/css/p.css",
     "https://web-ui.nether.click/components/css/section.css",
     "https://web-ui.nether.click/components/css/table.css",
-    "https://web-ui.nether.click/fonts/lexend/lexend.css",
-    "https://web-ui.nether.click/components/css/lists.css",
-    "https://web-ui.nether.click/components/css/app-drawer.css",
-    "https://web-ui.nether.click/components/css/grouped-list.css",
-    "https://web-ui.nether.click/components/css/tabs-switching.css"
+    "https://web-ui.nether.click/components/css/tabs-switching.css",
+    "https://web-ui.nether.click/fonts/lexend/lexend.css"
 ])
 
 await importJSFromList([
@@ -76,9 +77,11 @@ function showProducts() {
         <section>
             <div class="tabs-switching">
                 <div class="tabs">
-                    <button class="tab active" onclick="showTab('nether-web',)" data-tab="nether-web">Nether Web</button>
+                    <button class="tab active" onclick="showTab('nether-web',)" data-tab="nether-web">Nether
+                        Web</button>
                     <button class="tab" onclick="showTab('nether-apps')" data-tab="nether-apps">Nether Apps</button>
-                    <button class="tab" onclick="showTab('nether-republic')" data-tab="nether-republic">Nether Republic</button>
+                    <button class="tab" onclick="showTab('nether-republic')" data-tab="nether-republic">Nether
+                        Republic</button>
                 </div>
                 <div class="tab-content active" id="nether-web">
                     <h2>Nether Web</h2>
@@ -101,15 +104,18 @@ function showProducts() {
                     <h2>Nether Apps</h2>
                     <div class="grouped-list">
                         <button class="item" onclick="redirect('https://calculator.nether.click')">
-                            <img src="https://calculator.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            <img src="https://calculator.nether.click/source-code/img/logo.svg"
+                                alt="Nether Calculator Logo">
                             Nether Calculator
                         </button>
                         <button class="item" onclick="redirect('https://clocks.nether.click')">
-                            <img src="https://clocks.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            <img src="https://clocks.nether.click/source-code/img/logo.svg"
+                                alt="Nether Calculator Logo">
                             Nether Clocks
                         </button>
                         <button class="item" onclick="redirect('https://explorer.nether.click')">
-                            <img src="https://explorer.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            <img src="https://explorer.nether.click/source-code/img/logo.svg"
+                                alt="Nether Calculator Logo">
                             Nether Explorer
                         </button>
                         <button class="item" onclick="redirect('https://music.nether.click')">
@@ -117,23 +123,28 @@ function showProducts() {
                             Nether Music
                         </button>
                         <button class="item" onclick="redirect('https://notepad.nether.click')">
-                            <img src="https://notepad.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            <img src="https://notepad.nether.click/source-code/img/logo.svg"
+                                alt="Nether Calculator Logo">
                             Nether Notepad
                         </button>
                         <button class="item" onclick="redirect('https://photos.nether.click')">
-                            <img src="https://photos.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            <img src="https://photos.nether.click/source-code/img/logo.svg"
+                                alt="Nether Calculator Logo">
                             Nether Photos
                         </button>
                         <button class="item" onclick="redirect('https://server.nether.click')">
-                            <img src="https://server.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            <img src="https://server.nether.click/source-code/img/logo.svg"
+                                alt="Nether Calculator Logo">
                             Nether Server
                         </button>
                         <button class="item" onclick="redirect('https://system-monitor.nether.click')">
-                            <img src="https://system-monitor.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            <img src="https://system-monitor.nether.click/source-code/img/logo.svg"
+                                alt="Nether Calculator Logo">
                             Nether System Monitor
                         </button>
                         <button class="item" onclick="redirect('https://terminal.nether.click')">
-                            <img src="https://terminal.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            <img src="https://terminal.nether.click/source-code/img/logo.svg"
+                                alt="Nether Calculator Logo">
                             Nether Terminal
                         </button>
                         <button class="item" onclick="redirect('https://ui.nether.click')">
@@ -141,11 +152,13 @@ function showProducts() {
                             Nether UI
                         </button>
                         <button class="item" onclick="redirect('https://videos.nether.click')">
-                            <img src="https://videos.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            <img src="https://videos.nether.click/source-code/img/logo.svg"
+                                alt="Nether Calculator Logo">
                             Nether Videos
                         </button>
                         <button class="item" onclick="redirect('https://weather.nether.click')">
-                            <img src="https://weather.nether.click/source-code/img/logo.svg" alt="Nether Calculator Logo">
+                            <img src="https://weather.nether.click/source-code/img/logo.svg"
+                                alt="Nether Calculator Logo">
                             Nether Weather
                         </button>
                     </div>
@@ -170,6 +183,14 @@ function showProducts() {
             </div>
         </section>
     `)
+}
+
+function showAbout() {
+    scrollUp();
+    setTitle("About - Nether (nether.click)");
+    setContentOfMain(`
+        
+    `);
 }
 
 showHome();

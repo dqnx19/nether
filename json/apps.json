@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Nether",
+        "link": "nether.click",
+        "icon": "/img/icons/favicon.svg"
+    },
+    {
+        "name": "Nether Web UI",
+        "link": "web-ui.nether.click",
+        "icon": "/img/icons/favicon.svg"
+    },
+    {
+        "name": "Nether.js",
+        "link": "js.nether.click",
+        "icon": "/img/icons/favicon.png"
+    },
+    {
+        "name": "Nether Terminal",
+        "link": "terminal.nether.click",
+        "icon": "/source-code/img/logo.svg"
+    },
+    {
+        "name": "NRT",
+        "link": "nrt.nether.click",
+        "icon": "/img/icons/logo.svg"
+    },
+    {
+        "name": "NRB",
+        "link": "nrb.nether.click",
+        "icon": "/img/icons/logo.svg"
+    }
+]
