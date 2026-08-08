@@ -2,7 +2,7 @@ async function setAppDrawerContent() {
     const wrapper = document.querySelector(".app-drawer-wrapper");
     
 
-    const db = await fetch("json/apps.json").then(r => r.json());
+    const db = await fetch("https://nether.click/json/apps.json").then(r => r.json());
 
     wrapper.innerHTML = `
         <button onclick="open_app_drawer()" class="app-drawer-button">
